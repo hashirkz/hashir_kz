@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>sleepyzzz</title>
 
     <link rel="stylesheet" href="grape_juice.css">
 </head>
 <body>
     <div class="container">
-    <a href="/hashir_kz/" class="name"><h1 class="name">hashir ._. kz</h1></a>
+    <a href="/" id="name">hashir._.kz</a>
 
     <ul class="navbar">
         <li class="social">
@@ -20,6 +20,8 @@
                     <img class="hand-drawn-2" src="./icons/github_2.svg" alt="github">
                 </div>
             </a>
+            <p class="hidden-subtitle">github</p>
+
         </li>
 
         <li class="social">
@@ -29,6 +31,8 @@
                     <img class="hand-drawn-2" src="./icons/discord_2.svg" alt="discord">
                 </div>
             </a>
+            <p class="hidden-subtitle">discord</p>
+
         </li>
 
         <li class="social">
@@ -38,6 +42,8 @@
                     <img class="hand-drawn-2" src="./icons/monkeytype_2.svg" alt="monkeytype">
                 </div>
             </a>
+            <p class="hidden-subtitle">typing</p>
+
         </li>
 
         <li class="social">
@@ -47,6 +53,8 @@
                     <img class="hand-drawn-2" src="./icons/vsco_2.svg" alt="vsco">
                 </div>
             </a>
+            <p class="hidden-subtitle">vsco</p>
+
         </li>
 
     </ul>
@@ -54,4 +62,36 @@
     </div>
     
 </body>
+<script defer>
+    // selects social names and items
+    let navbar_items = document.querySelectorAll(".social");
+    let navbar_names = document.querySelectorAll(".hidden-subtitle");
+
+    let name = document.querySelector("#name");
+
+    name.addEventListener("mouseover",
+        () => {
+            name.textContent = "sleepyzzz";
+
+        });
+    
+    name.addEventListener("mouseout",
+        () => {
+            name.textContent = "hashir._.kz";
+
+        });
+
+    // adds hover effect for social icons
+    navbar_items.forEach((social, i) => {
+        social.addEventListener("mouseover", () => {
+            navbar_names[i].style.visibility = "visible";
+        });
+        
+        social.addEventListener("mouseout", () =>{
+            navbar_names[i].style.visibility = "hidden";
+        });
+    });
+
+
+</script>
 </html>

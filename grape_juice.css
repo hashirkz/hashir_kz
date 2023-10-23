@@ -14,10 +14,10 @@ body {
 
 }
 
-.name {
+#name {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     letter-spacing: 10px;
     color: rgb(179, 188, 254);
@@ -29,7 +29,7 @@ body {
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-.name:hover {
+#name:hover {
     letter-spacing: 20px;
     opacity: 0.5;
 }
@@ -38,7 +38,9 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Adjust the gap between list items */
+    gap: 20px;
+    flex-wrap: wrap;
+
 }
 
 .social {
@@ -54,6 +56,19 @@ body {
     width: 150px;
     height: 150px;
 }
+
+.hidden-subtitle {
+    letter-spacing: 10px;
+    color: rgb(179, 188, 254);
+    font-family: 'Courier New';
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0.5;
+
+    margin: 0px;
+    font-size: 1rem;
+}
+
 
 .hand-drawn-1 {
     position: absolute;
