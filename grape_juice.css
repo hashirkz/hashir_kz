@@ -1,0 +1,102 @@
+/* general stylesheet for website */
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the content takes the full viewport height */
+    background-color: #06061d;
+
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    letter-spacing: 10px;
+    color: rgb(179, 188, 254);
+    font-family: 'Courier New';
+    text-decoration: none;
+
+    transition-property: letter-spacing, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.name:hover {
+    letter-spacing: 20px;
+    opacity: 0.5;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between list items */
+}
+
+.social {
+    font-size: 1.2rem;
+}
+
+.container {
+    text-align: center;
+}
+
+.card-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.hand-drawn-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    animation: flicker 400ms step-end infinite;
+}
+
+/* .hand-drawn-1:hover, .hand-drawn-2:hover {
+    animation-play-state: paused;
+    opacity: 0.3;
+} */
+
+.hand-drawn-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    animation: flicker 400ms step-end infinite;
+    animation-delay: 200ms;
+}
+
+@keyframes flicker {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+
+
+/*
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+  
+  ::-webkit-scrollbar-thumb {
+    display: none;
+}
+*/
