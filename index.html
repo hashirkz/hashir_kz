@@ -10,9 +10,10 @@
 </head>
 <body>
     <div class="container">
-    <a href="/" id="name">hashir._.kz</a>
+    <a href="https://hashirkz.github.io/hashir_kz/" id="name">hashir._.kz</a>
 
     <ul class="navbar">
+
         <li class="social">
             <a href="https://github.com/hashirkz">
                 <div class="card-container">
@@ -21,7 +22,16 @@
                 </div>
             </a>
             <p class="hidden-subtitle">github</p>
+        </li>
 
+        <li class="social">
+            <a href="https://stackoverflow.com/users/18360897/hashir-k">
+                <div class="card-container">
+                    <img class="hand-drawn-1" src="./icons/so_1.svg" alt="stackoverflow">
+                    <img class="hand-drawn-2" src="./icons/so_2.svg" alt="stackoverflow">
+                </div>
+            </a>
+            <p class="hidden-subtitle">stackoverflow</p>
         </li>
 
         <li class="social">
@@ -32,7 +42,16 @@
                 </div>
             </a>
             <p class="hidden-subtitle">discord</p>
-
+        </li>
+        
+        <li class="social">
+            <a href="https://vsco.co/xxxoxoxo7/gallery">
+                <div class="card-container">
+                    <img class="hand-drawn-1" src="./icons/vsco_1.svg" alt="vsco">
+                    <img class="hand-drawn-2" src="./icons/vsco_2.svg" alt="vsco">
+                </div>
+            </a>
+            <p class="hidden-subtitle">vsco</p>
         </li>
 
         <li class="social">
@@ -43,55 +62,11 @@
                 </div>
             </a>
             <p class="hidden-subtitle">typing</p>
-
-        </li>
-
-        <li class="social">
-            <a href="https://vsco.co/xxxoxoxo7/gallery">
-                <div class="card-container">
-                    <img class="hand-drawn-1" src="./icons/vsco_1.svg" alt="vsco">
-                    <img class="hand-drawn-2" src="./icons/vsco_2.svg" alt="vsco">
-                </div>
-            </a>
-            <p class="hidden-subtitle">vsco</p>
-
         </li>
 
     </ul>
-
     </div>
     
 </body>
-<script defer>
-    // selects social names and items
-    let navbar_items = document.querySelectorAll(".social");
-    let navbar_names = document.querySelectorAll(".hidden-subtitle");
-
-    let name = document.querySelector("#name");
-
-    name.addEventListener("mouseover",
-        () => {
-            name.textContent = "sleepyzzz";
-
-        });
-    
-    name.addEventListener("mouseout",
-        () => {
-            name.textContent = "hashir._.kz";
-
-        });
-
-    // adds hover effect for social icons
-    navbar_items.forEach((social, i) => {
-        social.addEventListener("mouseover", () => {
-            navbar_names[i].style.visibility = "visible";
-        });
-        
-        social.addEventListener("mouseout", () =>{
-            navbar_names[i].style.visibility = "hidden";
-        });
-    });
-
-
-</script>
+<script defer src="/hover.js"></script>
 </html>

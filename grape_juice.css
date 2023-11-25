@@ -45,6 +45,8 @@ body {
 
 .social {
     font-size: 1.2rem;
+    width: 150px;
+    height: 150px;
 }
 
 .container {
@@ -63,6 +65,8 @@ body {
     font-family: 'Courier New';
     text-decoration: none;
     visibility: hidden;
+    word-wrap: break-word;
+    width: 100%;
     opacity: 0.5;
 
     margin: 0px;
