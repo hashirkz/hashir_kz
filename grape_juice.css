@@ -1,4 +1,8 @@
 /* general stylesheet for website */
+:root {
+    --txt: rgb(179, 188, 254);
+    --bg: #06061d;
+}
 
 body, ul {
     margin: 0;
@@ -10,7 +14,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Ensure the content takes the full viewport height */
-    background-color: #06061d;
+    background-color: var(--bg);
+    color: var(--txt);
+    font-family: 'Courier New';
 
 }
 
@@ -18,15 +24,19 @@ body {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
-
+    color: var(--txt);
     letter-spacing: 10px;
-    color: rgb(179, 188, 254);
-    font-family: 'Courier New';
     text-decoration: none;
 
     transition-property: letter-spacing, opacity;
     transition-duration: 200ms;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.txt {
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 10px;
 }
 
 #name:hover {
@@ -51,7 +61,14 @@ body {
 }
 
 .container {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 80vh;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .card-container {
@@ -62,7 +79,7 @@ body {
 
 .hidden-subtitle {
     letter-spacing: 10px;
-    color: rgb(179, 188, 254);
+    /* color: rgb(179, 188, 254); */
     font-family: 'Courier New';
     text-decoration: none;
     visibility: hidden;
@@ -107,7 +124,18 @@ body {
     100% { opacity: 0; }
 }
 
+.vcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: auto;
+    height: auto;
+    text-align: left;
 
+    /* margin-top: 100px; */
+
+}
 
 
 /*
